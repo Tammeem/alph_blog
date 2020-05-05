@@ -8,4 +8,10 @@ get 'about' => 'pages#about'
 
 
 resources :articles
+
+
+get 'signup' => 'users#new'
+
+#post 'users' => 'users#action'
+resources :users, except: [:new]
 end
