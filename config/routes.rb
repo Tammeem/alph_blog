@@ -14,4 +14,8 @@ get 'signup' => 'users#new'
 
 #post 'users' => 'users#action'
 resources :users, except: [:new]
+
+get 'login' => 'sessions#new'
+post 'login' => 'sessions#create'
+delete 'logout' => 'sessions#destroy'
 end
