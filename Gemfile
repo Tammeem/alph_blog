@@ -70,3 +70,5 @@ group :production do
 end
 
 gem 'hirb'
+
+gem 'rails-controller-testing'
